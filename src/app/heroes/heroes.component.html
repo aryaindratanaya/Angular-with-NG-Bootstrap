@@ -3,6 +3,8 @@
     *ngFor="let hero of heroes"
     routerLink="/hero/{{ hero.id }}"
     class="list-group-item list-group-item-action"
+    placement="top"
+    ngbTooltip="Are you sure to pick {{ hero.name }}?"
   >
     <div class="d-flex w-100 justify-content-between">
       <h5 class="mb-1">{{ hero.name }}</h5>
