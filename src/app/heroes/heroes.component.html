@@ -1,0 +1,12 @@
+<ol class="list-group list-group-numbered">
+  <li
+    *ngFor="let hero of heroes"
+    class="list-group-item d-flex justify-content-between align-items-start"
+  >
+    <div class="ms-2 me-auto">
+      <div class="fw-bold">{{ hero.name }}</div>
+      Just a description
+    </div>
+    <span class="badge bg-primary rounded-pill">{{ hero.id }}</span>
+  </li>
+</ol>
