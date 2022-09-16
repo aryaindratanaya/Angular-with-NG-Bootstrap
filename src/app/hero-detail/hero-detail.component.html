@@ -1,13 +1,16 @@
-<div *ngIf="hero?.id" class="card text-center">
-  <div class="card-header">This is your hero!</div>
+<div *ngIf="hero" class="card">
   <div class="card-body">
-    <h5 class="card-title">{{ hero?.name }}</h5>
-    <p class="card-text">Some description can go here.</p>
-    <p class="card-text text-muted"><small>And some small ones too</small></p>
-    <a routerLink="/heroes" class="btn btn-primary">Back</a>
-  </div>
-  <div class="card-footer text-muted">
-    Your hero says, "Thanks for choosing me.".
+    <h5 class="card-title">Hi, this is your hero!</h5>
+    <dl class="row mb-0">
+      <dt class="col-sm-3">ID</dt>
+      <dd class="col-sm-9">{{ hero.id }}</dd>
+
+      <dt class="col-sm-3">Name</dt>
+      <dd class="col-sm-9">{{ hero.name }}</dd>
+
+      <dt class="col-sm-3">Description</dt>
+      <dd class="col-sm-9">You can put some long description here.</dd>
+    </dl>
   </div>
 </div>
 
