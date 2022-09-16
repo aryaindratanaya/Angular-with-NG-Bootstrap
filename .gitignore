@@ -6,6 +6,9 @@
 /out-tsc
 /bazel-out
 
+# Eslint
+.eslintcache
+
 # Node
 /node_modules
 npm-debug.log
