@@ -1,0 +1,23 @@
+<div *ngIf="hero?.id" class="card text-center">
+  <div class="card-header">This is your hero!</div>
+  <div class="card-body">
+    <h5 class="card-title">{{ hero?.name }}</h5>
+    <p class="card-text">Some description can go here.</p>
+    <p class="card-text text-muted"><small>And some small ones too</small></p>
+    <a routerLink="/heroes" class="btn btn-primary">Back</a>
+  </div>
+  <div class="card-footer text-muted">
+    Your hero says, "Thanks for choosing me.".
+  </div>
+</div>
+
+<div *ngIf="!hero?.id" class="card text-center">
+  <div class="card-header">Are you lost?</div>
+  <div class="card-body">
+    <h5 class="card-title">Can't find your hero?</h5>
+    <p class="card-text">Some description can go here.</p>
+    <p class="card-text text-muted"><small>And some small ones too</small></p>
+    <a routerLink="/heroes" class="btn btn-primary">Back</a>
+  </div>
+  <div class="card-footer text-muted">Many heroes are waiting for you.</div>
+</div>
