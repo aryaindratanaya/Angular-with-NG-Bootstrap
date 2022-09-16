@@ -4,6 +4,10 @@
     routerLink="/hero/{{ hero.id }}"
     class="list-group-item list-group-item-action"
     [appHighlight]="highlightColor"
+    appTooltip="{{ hero.name }} details"
+    placement="top"
+    [offset]="5"
+    [delay]="500"
   >
     <div class="d-flex w-100 justify-content-between">
       <h5 class="mb-1">{{ hero.name }}</h5>
