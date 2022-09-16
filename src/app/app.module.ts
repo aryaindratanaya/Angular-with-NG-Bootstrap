@@ -7,6 +7,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HeroesComponent } from './heroes/heroes.component';
 import { HeroDetailComponent } from './hero-detail/hero-detail.component';
 import { HeroQuoteComponent } from './hero-quote/hero-quote.component';
+import { HighlightDirective } from './highlight.directive';
 
 @NgModule({
   declarations: [
@@ -14,6 +15,7 @@ import { HeroQuoteComponent } from './hero-quote/hero-quote.component';
     HeroesComponent,
     HeroDetailComponent,
     HeroQuoteComponent,
+    HighlightDirective,
   ],
   imports: [BrowserModule, AppRoutingModule, NgbModule],
   providers: [],

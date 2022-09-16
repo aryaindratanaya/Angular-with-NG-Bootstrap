@@ -20,6 +20,8 @@ export class HeroesComponent implements OnInit {
     { id: 20, name: 'Tornado' },
   ];
 
+  highlightColor = 'cornsilk';
+
   constructor() {}
 
   ngOnInit(): void {}
