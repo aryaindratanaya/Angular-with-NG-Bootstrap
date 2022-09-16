@@ -1,12 +1,14 @@
-<ol class="list-group list-group-numbered">
-  <li
+<div class="list-group">
+  <a
     *ngFor="let hero of heroes"
-    class="list-group-item d-flex justify-content-between align-items-start"
+    routerLink="/detail/{{ hero.id }}"
+    class="list-group-item list-group-item-action"
   >
-    <div class="ms-2 me-auto">
-      <div class="fw-bold">{{ hero.name }}</div>
-      Just a description
+    <div class="d-flex w-100 justify-content-between">
+      <h5 class="mb-1">{{ hero.name }}</h5>
+      <small>{{ hero.id }}</small>
     </div>
-    <span class="badge bg-primary rounded-pill">{{ hero.id }}</span>
-  </li>
-</ol>
+    <p class="mb-1">Some description can go here.</p>
+    <small>And some small ones too.</small>
+  </a>
+</div>
